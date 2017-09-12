@@ -23,7 +23,7 @@ def main(hosts, inp):
 
     elif 'etsy' in driver.current_url:
         print 'opened etsy'
-        search_box = driver.find_element_by_class_name('input')
+        search_box = driver.find_element_by_id('search-query')
         search_box.clear()
         search_box.send_keys(inp)
         search_box.send_keys(Keys.RETURN)
